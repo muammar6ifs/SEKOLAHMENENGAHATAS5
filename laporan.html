@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Laporan Absensi</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>SMAN 5</h2>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="profil.html">Profil</a>
+
+<a href="siswa.html">Data Siswa</a>
+
+<a href="absensi.html">Absensi</a>
+
+<a href="laporan.html">Laporan</a>
+
+</div>
+
+<div class="content">
+
+<h1>Laporan Absensi</h1>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>No</th>
+
+<th>Nama</th>
+
+<th>Tanggal</th>
+
+<th>Jam</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="laporan"></tbody>
+
+</table>
+
+</div>
+
+<script>
+
+let data=JSON.parse(localStorage.getItem("absensi"))||[];
+
+let isi="";
+
+data.forEach((item,index)=>{
+
+isi+=`
+
+<tr>
+
+<td>${index+1}</td>
+
+<td>${item.nama}</td>
+
+<td>${item.tanggal}</td>
+
+<td>${item.jam}</td>
+
+<td>${item.status}</td>
+
+</tr>
+
+`;
+
+});
+
+document.getElementById("laporan").innerHTML=isi;
+
+</script>
+
+</body>
+
+</html>

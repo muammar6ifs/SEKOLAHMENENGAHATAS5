@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Absensi Suara</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>SMAN 5</h2>
+
+<a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+
+<a href="profil.html"><i class="fa-solid fa-school"></i> Profil Sekolah</a>
+
+<a href="siswa.html"><i class="fa-solid fa-users"></i> Data Siswa</a>
+
+<a href="absensi.html"><i class="fa-solid fa-microphone"></i> Absensi Suara</a>
+
+<a href="laporan.html"><i class="fa-solid fa-file-lines"></i> Laporan</a>
+
+<a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+
+</div>
+
+<div class="content">
+
+<h1>Absensi Suara</h1>
+
+<select id="namaSiswa">
+
+<option value="">-- Pilih Nama Siswa --</option>
+
+</select>
+
+<br><br>
+
+<button id="mic" onclick="mulaiAbsensi()">
+
+Mulai Absensi
+
+</button>
+
+<h2 id="hasil"></h2>
+
+</div>
+
+<script src="js/speech.js"></script>
+
+</body>
+
+</html>

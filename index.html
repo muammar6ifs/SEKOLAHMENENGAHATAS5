@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SMAN 5 | Sistem Informasi Sekolah</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <img src="assets/logo.png" class="logo">
+
+            <h1>SMAN 5</h1>
+
+            <h3>Sistem Informasi Sekolah</h3>
+
+            <p>
+                Selamat Datang di Website Resmi
+            </p>
+
+            <a href="login.html" class="btn">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+
+                Masuk
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        window.onload = function () {
+
+            let suara = new SpeechSynthesisUtterance(
+
+                "Selamat Datang Di Website Informasi SMAN 5, Jalan Jalan Ke Pulau Tidung, Pulangnya Nonton Persija, Daripada Pilih Sekolah Bingung, Yuk Masuk SMAN 5 Saja."
+
+            );
+
+            suara.lang = "id-ID";
+
+            speechSynthesis.speak(suara);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
